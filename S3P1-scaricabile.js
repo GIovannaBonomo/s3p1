@@ -45,23 +45,44 @@
  Scrivi una funzione chiamata "upperFirst", che accetta una stringa come parametro e la ritorna rendendo maiuscola ogni lettera iniziale di ogni parola.
 */
 
-/* 
-  
- 
+/*
+let frase = prompt("scrivi qui la frase")
+    function upperFirst (parola){
+      let parole = parola.split(" ")
+      let fraseMaiusc = parole.map(parola=>{
+        return parola.charAt(0).toUpperCase() + parola.slice(1).toLowerCase();
+      });
+       return fraseMaiusc.join(" ")
+    }
+    console.log (upperFirst(frase))
 */
 
 /* ESERCIZIO 5
  Scrivi una funzione chiamata "giveMeRandom", che accetta come parametro un numero chiamato n e ritorna un array contenente n numeri random contenuti tra 0 e 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/*  let parametro = parseInt(prompt("inserisci qui il numero"))
+      function giveMeRandom (n) {
+        let numero = []
+        for (let i = 0; i < n; i++) {
+         numero.push(Math.floor(Math.random() * 11));
+      }
+      return numero;
+    } console.log (giveMeRandom(parametro)) */
 
 //EXTRA:
 /* ESERCIZIO 1
  Scrivi una funzione chiamata "area" che riceve due parametri (l1, l2) e calcola l'area del rettangolo associato.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* 
+  let base = parseInt(prompt ("scrivi il valore di base"))
+  let altezza = parseInt(prompt ("scrivi il valore di altezza"))
+    function area (l1,l2){
+      return (l1*l2)
+    } 
+  console.log(area(base,altezza))
+*/
 
 /* ESERCIZIO 2
  Scrivi una funzione chiamata "crazyDiff" che calcola la differenza assoluta tra un numero fornito e 19.
