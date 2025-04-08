@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script> 
+ /* ESERCIZIO 4
+ Scrivi una funzione chiamata "upperFirst", che accetta una stringa come parametro e la ritorna rendendo maiuscola ogni lettera iniziale di ogni parola.
+*/
+    let frase = (prompt("inserisci qui la parola da convertire"))
+    upperFirst (frase)
+  function upperFirst (parola)
+  {
+    let maiuscola = parola.split("") //separa le lettere un un array
+    let fraseMinusc= parola.slice(1) //prende la parola a partire dalla seconda lettera
+    let fraseMaiusc= maiuscola[0].toUpperCase() //prende la prima lettera e la fa diventare maiuscola
+    console.log(fraseMaiusc+fraseMinusc)
+  }
+   </script>
+    <script src="S3P1-scaricabile.js"></script>
+</body>
+</html>
