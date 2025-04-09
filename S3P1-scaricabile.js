@@ -89,14 +89,36 @@ let frase = prompt("scrivi qui la frase")
  Se il valore calcolato è più grande di 19, la funzione deve tornare tale risultato moltiplicato per 3.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/*     
+      let numeroInserito = parseInt(prompt("Inserisci qui il numero"))
+        function crazyDiff (numero){
+            let calcolo= Math.abs(numero - 19) 
+                if (calcolo>19){
+                 return calcolo * 3
+                }
+                    else{ 
+                        return calcolo;
+                        }
+                }
+        console.log (crazyDiff(numeroInserito)) 
+*/
 
 /* ESERCIZIO 3
  Scrivi una funzione chiamata "codify" che accetta una stringa come parametro.
  La funzione deve aggiungere la parola "code" all'inizio della stringa fornita e ritornare il risultato, ma se la stringa fornita comincia proprio con "code" allora deve ritornarla senza modifiche.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/*  
+  let parola = (prompt("inserisci qui la parola"))
+    function codify (stringa){
+       if (parola.startsWith("code")){
+    return parola}
+        else {
+            return "code" + stringa
+        }
+    }
+        console.log (codify(parola))
+*/
 
 /* ESERCIZIO 4
  Scrivi una funzione chiamata "check3and7" la quale accetta un numero intero positivo come parametro.
@@ -104,10 +126,26 @@ let frase = prompt("scrivi qui la frase")
  SUGGERIMENTO: operatore modulo
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* 
+  let calcolo = (prompt("inserisci qui il valore"))
+    function check3and7 (a){
+        if  (a%3===0 || a%7===0){
+          return true
+          } else {
+          return false
+          } 
+        }
+    console.log(check3and7(calcolo))
+*/
 
 /* ESERCIZIO 5
  Scrivi una funzione chiamata "cutString", che accetta una stringa come parametro e la ritorna senza il primo e l'ultimo carattere.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/*
+  let parola= (prompt("inserisci qui la parola da modificare"))
+        function cutString(stringa){
+          return parola.slice( 1, stringa.length -1 ) 
+          }
+        console.log (cutString(parola))
+*/
